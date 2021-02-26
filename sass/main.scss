@@ -1,0 +1,209 @@
+
+
+
+
+
+
+header
+{   
+    padding: 24px 0 15px 72px;
+
+    & img{
+        height: 26px;
+    }
+}
+
+.search
+{
+    background-color:#d3d3d3;
+    padding: 10px;
+}
+
+form 
+ {  
+    margin-bottom: 30px;
+
+    & i
+    {
+        margin-left: 64px;
+    }
+    & input
+    {
+        border: none;
+        background-color:#d3d3d3;
+    }
+    & h2
+    {   
+        text-align: center;
+        margin-top: 30px;
+    }
+    & p
+    {
+        text-align: center;
+    }
+    & button
+    {
+        margin: 27px 0 0 56px;
+        padding: 10px;
+        border-radius: 40px;
+        padding: 6px 21px 10px 20px;
+        background-color: #ff79da;
+        border-color: #ff79da;
+        border: none;
+        color: white;
+        background-image: linear-gradient(#ff79da,#9356dc);
+    }
+
+}
+
+nav
+{
+    padding: 10px;
+
+    & button
+    {   
+        width: 100%;
+        padding: 18px 54px 18px 18px;
+        border-radius: 13px;
+        border: none;
+        margin-bottom: 7px;
+    }
+
+    & span
+    {
+        position: absolute;
+        left: 3px;
+        border-radius: 50%;
+        border: 1px solid black;
+        width: 27px;
+        background-color: #9356D6;
+        border-color: #9356D6;
+        color: white;
+    }
+    
+    & i
+    {
+
+        position: absolute;
+        left: 44px;
+        margin-top: 4px;
+    }
+
+    }
+
+    .choose
+    {
+        padding-right: 43px;
+    }
+    #ellipse
+    {
+      position: absolute;
+      left: 38px;
+    }
+  
+    #store
+    {
+      position: absolute;
+      left: 40px;
+      color: #9356D6;
+    }
+  
+    .taste
+    {
+      padding: 18px 50px 18px 18px;
+    }
+
+    .restaurants
+    {
+        padding: 19px;
+        background-color: gray;
+
+        & a
+        {
+            text-decoration: none;
+        }
+
+        & img
+        {   
+            height: 138px;
+            width: 282px;
+            object-fit: cover;
+            border-radius: 10px 10px 0 0;
+        }
+        
+        & figure
+        {
+            margin-bottom: 25px ;
+        }
+        
+        & figcaption
+        {
+         display: flex;
+         background-color: white;
+         border-radius: 0 0 10px 10px;
+         justify-content: space-around;
+        }
+    
+        & figcaption i
+        {   
+            line-height: 60px;
+            font-size: 23px;
+            color: gray;
+        }
+       
+
+    }
+
+.new1
+    {
+        position: absolute;
+        right: 30px;
+        top: 673px;
+        padding: 0 10px;
+        background-color: #99E2D0;
+        color: green;
+        border-radius: 2px;
+    }
+
+.new2
+    {
+        position: absolute;
+        right: 30px;
+        top: 898px;
+        background-color:#99E2D0;
+        color: green;
+        border-radius: 2px;
+        padding: 0 10px;
+    }
+
+footer
+{
+    margin-top: 58px;
+    background-color: gray;
+    color: white;
+    padding-top: 10px;
+
+    & h3
+    {
+        margin-left: 10px;
+    }
+
+    & ul
+    {
+        margin-left: 10px;
+    }
+
+    & a
+    {   
+        text-decoration: none;
+        color: white;
+    }
+
+}
+
+
+
+
+
+
+
