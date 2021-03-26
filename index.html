@@ -5,7 +5,6 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
         <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="normalizer.css" />
         <link rel="stylesheet" href=".public\css\style.css" />
@@ -17,39 +16,43 @@
         <img src="ohmyfood.png" alt="logo du site" />
     </header>
     <form method="POST" action="traitement.php">
-        <div>
+        <div class="search">
             <i class="fas fa-map-marker-alt"></i>
             <input type="search" name="city" id="city">
         </div>
-        <h2>Réservez le menu qui vous convient</h2>
+        <h1>Réservez le menu qui vous convient</h1>
         <p>Découvrez des restaurants d'exception, sélectionnez par nos soins.</p>
         <button>Explorez nos restaurants</button>
     </form>
     <nav>
         <h2>Fonctionnement</h2>
-      <button><span>1</span><i class="fas fa-mobile-alt"></i>Choissisez un restaurant</button> 
-      <button><span>2</span><i class="fas fa-ellipsis-v"></i><i class="fas fa-bars"></i>Composez votre menu</button>
-      <button><span>3</span><i class="fas fa-store"></i>Dégustez au restaurant</button>
+      <button class="choose"><span>1</span><i class="fas fa-mobile-alt"></i>Choissisez un restaurant</button> 
+      <button><span>2</span><i id="ellipse" class="fas fa-ellipsis-v"></i><i class="fas fa-bars"></i>Composez votre menu</button>
+      <button class="taste"><span>3</span><i id="store"  class="fas fa-store"></i>Dégustez au restaurant</button>
     </nav>
 
-    <section>
+    <section class="restaurants"> 
         <h2>Restaurants</h2>
         <a href="la_palette_du_gout.html">
             <figure>
-                <img src="images/la_palette_du_gout.jpg" alt="plat"/><span>Nouveau</span>
+                <img src="images/la_palette_du_gout.jpg" alt="plat"/><span class="new1">Nouveau</span>
                 <figcaption>
-                    <h2>La palette du goût</h2>
-                    <p>Ménilmontant</p>
+                    <div class="palette">
+                        <h2>La palette du goût</h2>
+                        <p>Ménilmontant</p>
+                    </div>
                     <i class="far fa-heart"></i>
                 </figcaption>
             </figure>
         </a>
         <a href="la_note_enchantee.html">
             <figure>
-                <img src="images/la_note_enchantee.jpg" alt="plat" /><span>Nouveau</span>
+                <img src="images/la_note_enchantee.jpg" alt="plat" /><span class="new2">Nouveau</span>
                 <figcaption>
-                    <h2>La note enchantée</h2>
-                    <p>Charonne</p>
+                    <div>
+                        <h2>La note enchantée</h2>
+                        <p>Charonne</p>
+                    </div>
                     <i class="far fa-heart"></i>
                 </figcaption>
             </figure>
@@ -58,8 +61,10 @@
             <figure>
                 <img src="images/a_la_francaise.jpg" alt="plat" />
                 <figcaption>
-                    <h2>A la française</h2>
-                    <p>Cité rouge</p>
+                    <div>
+                        <h2>A la française</h2>
+                        <p>Cité rouge</p>
+                    </div>
                     <i class="far fa-heart"></i>
                 </figcaption>
             </figure>
@@ -68,8 +73,10 @@
             <figure>
                 <img src="images/le_delice_des_sens.jpg" alt="plat" />
                 <figcaption>
-                    <h2>le délice des sens</h2>
-                    <p>Folie-Méricourt</p>
+                    <div>
+                        <h2>le délice des sens</h2>
+                        <p>Folie-Méricourt</p>
+                    </div>
                     <i class="far fa-heart"></i>
                 </figcaption>
             </figure>
@@ -78,19 +85,15 @@
 
     <footer>
         <h3>Oh my food</h3>
-            <ul>
-                <div>
+            <ul>    
+                <li>
                     <i class="fas fa-utensils"></i>
-                    <li>
-                        <a href="#">Proposez un restaurant</a>
-                    </li>
-                </div>
-                <div>
+                    <a href="#">Proposez un restaurant</a>
+                </li>
+                <li>
                     <i class="fas fa-hands-helping"></i>
-                    <li>
-                        <a href="#">Devenir partenaire</a>
-                    </li>
-                </div>
+                    <a href="#">Devenir partenaire</a>
+                </li>
                 <li>
                     <a href="#">Mentions légales</a>
                 </li>
