@@ -5,12 +5,23 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
         <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Shrikhand&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="normalizer.css" />
         <link rel="stylesheet" href=".public\css\style.css" />
         <title>Ohmyfood</title>
     </head>
 <body>
+
+    <div class="container">
+        <div class="load">
+            <div class="load_bar load_bar1"></div>
+            <div class="load_bar load_bar2"></div>
+            <div class="load_bar load_bar3"></div>
+            <div class="load_bar load_bar4"></div>
+            <div class="load_bar load_bar5"></div>
+        </div>
+     </div>
 
     <header>
         <img src="ohmyfood.png" alt="logo du site" />
@@ -26,14 +37,16 @@
     </form>
     <nav>
         <h2>Fonctionnement</h2>
-      <button class="choose"><span>1</span><i class="fas fa-mobile-alt"></i>Choissisez un restaurant</button> 
+      <button><span>1</span><i class="fas fa-mobile-alt"></i>Choissisez un restaurant</button> 
       <button><span>2</span><i id="ellipse" class="fas fa-ellipsis-v"></i><i class="fas fa-bars"></i>Composez votre menu</button>
       <button class="taste"><span>3</span><i id="store"  class="fas fa-store"></i>Dégustez au restaurant</button>
     </nav>
-
+    
     <section class="restaurants"> 
-        <h2>Restaurants</h2>
-        <a href="la_palette_du_gout.html">
+        <h2 class="shop">Restaurants</h2>
+        <div class="acceuil_img">
+            <div class="acceuil_img1">
+            <a href="la_palette_du_gout.html">
             <figure>
                 <img src="images/la_palette_du_gout.jpg" alt="plat"/><span class="new1">Nouveau</span>
                 <figcaption>
@@ -56,8 +69,9 @@
                     <i class="far fa-heart"></i>
                 </figcaption>
             </figure>
-        </a>
-        <a href="a_la_francaise.html">
+        </a></div>
+        
+           <div class="acceuil_img2"><a href="a_la_francaise.html">
             <figure>
                 <img src="images/a_la_francaise.jpg" alt="plat" />
                 <figcaption>
@@ -80,7 +94,8 @@
                     <i class="far fa-heart"></i>
                 </figcaption>
             </figure>
-        </a>
+        </a></div>
+    </div>
     </section>
 
     <footer>
@@ -91,17 +106,18 @@
                     <a href="#">Proposez un restaurant</a>
                 </li>
                 <li>
-                    <i class="fas fa-hands-helping"></i>
+                    <i id="hand" class="fas fa-hands-helping"></i>
                     <a href="#">Devenir partenaire</a>
                 </li>
                 <li>
                     <a href="#">Mentions légales</a>
                 </li>
                 <li>
-                    <a href="#">Contact</a>
+                    <a href="mailto:nullepart@mozilla.org">Contact</a>
                 </li>
             </ul>
     </footer>
+    
 
 
 
