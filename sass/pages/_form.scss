@@ -1,0 +1,93 @@
+
+
+
+.search
+{
+    background-color:#d3d3d3;
+    padding: 10px;
+}
+
+ form 
+ {  
+    margin-bottom: 30px;
+    padding-bottom: 44px;
+    background-color: #f5f5f5;
+    & i
+    {
+        margin-left: 64px;
+    }
+    & input
+    {
+        border: none;
+        background-color:#d3d3d3;
+    }
+
+    & h1
+    {
+        font-size: 23px;
+        text-align: center;
+        margin-top: 38px;
+
+    }
+
+    & h2
+    {   
+        text-align: center;
+        margin-top: 30px;
+    }
+    & p
+    {
+        text-align: center;
+    }
+}    .gradient--button
+    {
+        margin: 27px 0 0 56px;
+        border-radius: 40px;
+        padding: 11px 21px 10px 20px;
+        background-color: $color-secondary;
+        border-color: $color-secondary;
+        border: none;
+        color: white;
+        background-image: linear-gradient( to bottom right,$color-secondary,$color-primary);
+
+        &:hover
+        {
+            background-image: linear-gradient( to bottom right, lighten($color-secondary,5%),lighten($color-primary,5%));
+        }
+        &_pay
+        {
+            margin: 35px 0 0 46px;
+            width: auto;
+            padding: 18px 64px 0 64px;
+            border-radius: 40px;
+
+            /*@include fullscreen1
+            {
+                margin-left: 556px;
+            }
+
+            @include screen
+            {
+                margin: 35px 0 0 364px;
+            }
+
+            @include tablette
+            {
+                position: absolute;
+                bottom: 89px;
+                right: 17%;
+            }
+
+            @include mobile-only2
+            {
+                margin: 35px 0 0 81px;
+                position: initial;
+            }
+
+            @include mobile-only
+            {
+                margin: 35px 0 0 75px;
+                position: initial;
+            }*/
+        }
+    }
