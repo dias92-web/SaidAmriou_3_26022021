@@ -1,0 +1,67 @@
+
+
+
+
+.food
+{   
+    padding: 24px 0 15px 72px;
+
+    & img{
+        height: 26px;
+        margin-top: 6px;
+    }
+    
+    &--menu
+    {
+        display: flex;
+        padding: 24px 0 15px 27px;
+        & a
+        {
+        margin-right: 39px;
+        color: black;
+        }
+       
+        /*& img
+        {
+            
+            
+        
+            @include ecran
+            {
+                margin-left: 685px;
+            }
+
+            @include fullscreen1
+            {
+                margin-left: 626px;
+            }
+
+            @include screen
+            {
+               margin-left: 359px;
+            }
+
+            @include tablette
+            {
+            margin-left: 207px;
+            }
+
+            @include mobile-only2
+            {
+                margin-left: 48px;
+            }
+
+            @include mobile-only
+            {
+                margin-left: 18px;
+            }
+
+            margin-left: 0;
+            
+
+        }*/
+
+    }
+     
+    
+}
