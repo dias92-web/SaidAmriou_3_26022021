@@ -1,0 +1,39 @@
+
+
+
+footer
+{
+    background-color: gray;
+    color: white;
+    padding: 15px 0 7px 16px;
+
+    & h3
+    {
+        margin-left: 10px;
+    }
+
+    & ul
+    {
+        margin-left: 10px;
+    }
+
+    & a
+    {   
+        text-decoration: none;
+        color: white;
+    }
+
+    & i
+    {
+        margin-right: 10px;
+    }
+
+}
+
+
+#hand
+    {
+        width: 13px;
+    }
+
+
