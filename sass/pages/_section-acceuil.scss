@@ -37,26 +37,29 @@
         font-size: 23px;
         background: transparent;
         
+        
         &:hover
             {
-                -webkit-text-fill-color:transparent;
+        
                 cursor: pointer;
-                background: linear-gradient(to bottom,$color-secondary,$color-primary);
-                -webkit-background-clip: text;
-                -moz-background-clip: text;
-                background-clip: text;
-                /*font-weight: bold;
-                color: red;*/
+               
             }
         
         & i
         {
+            transition: font-weight 0.5s, background 4s, color 1s;
+            background: transparent;
+            color: black;
            
 
             &:hover
             {
+                color:transparent;
+                background: linear-gradient(to bottom,$color-secondary,$color-primary);
+                -webkit-background-clip: text;
+                -moz-background-clip: text;
+                background-clip: text;
                 font-weight: 800;
-                transition: font-weight 2s;
             }
             
         
