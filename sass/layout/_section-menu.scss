@@ -8,19 +8,7 @@ main section
     margin-top: -43px;
     border-radius: 35px 35px 0 0;
 
-    /*@include tablette
-    {
-        padding: 0 5px 42px 60px;
-    }
-    @include mobile-only2
-    {
-        padding: 0 23px 42px 23px;
-    }
-    @include screen
-    {
-        padding: 57px 5px 42px 28px;
-        margin-top: -94px;
-    }*/
+    
 }
 
 main header
@@ -29,17 +17,6 @@ main header
     justify-content: space-between;
     padding: 23px 23px 23px 14px;
 
-    /*@include tablette
-    {
-        padding: 36px 23px 72px 14px;
-        justify-content: center;
-
-    }
-
-    @include screen
-    {
-        padding: initial;
-    }*/
 }
 
 header
@@ -50,20 +27,10 @@ header
         margin-top: 7px;
         font-size: 24px;
 
-        /*@include tablette
-        {
-            margin: 7px 0 0 0;
-        }*/
+        
 
     }
 
-    & h1
-    {
-        /*@include tablette
-        {
-            margin-right: 61px;
-        }*/
-    }
 
 }
 
@@ -74,12 +41,7 @@ main
     {
         position: relative;
         z-index: 1;  
-        /*@include tablette
-        {
-            max-height: 363px;
-            width: 100%;
-            object-fit: cover;
-        }*/
+        
     }
 
     & button
@@ -94,10 +56,7 @@ main
         padding: 11px 20px 13px 6px;
         overflow: hidden;
         height: 65px;
-        /*@include tablette
-        {
-            width: 310px;
-        }*/
+        
         
 
         & i
@@ -133,21 +92,20 @@ main
 
 .contener
 {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+    
+    
     flex: none;
     width: 89%;
     animation-fill-mode: both;
-    align-self: flex-end;
     line-height: 24px;
     max-height: calc(24px*2);
     position: relative;
-    padding-right: 96px;
+    padding-right: 20px;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden;
     transition: width 2s;
+    text-align: left;
     
 
 
@@ -197,28 +155,9 @@ main
     color: none;
     border-bottom: 3px solid $color-tertiary;
     display: inline-block;
-    width: 16%;
+    width: fit-content;
     font-size: 18px;
-    /*@include tablette
-    {
-        align-self: center;
-        width: 39%;
-        text-align: center;
-    }
-    @include screen
-    {
-        margin: 0 0 28px 5px;
-    }
-
-    &3
-    {
-        @include tablette
-        {
-            width: 24%;
-            align-self:flex-start;
-            margin-left: 64px;
-        }
-    }*/
+   
 }
 
 
@@ -238,11 +177,7 @@ main
     animation: plat 2s  forwards  cubic-bezier(1,0,.79,.72);
     visibility: hidden;
     animation-delay: 2s;
-    /*@include tablette
-    {
-        display: flex;
-        flex-direction: column;
-    }*/
+    
     
 
 }
@@ -252,16 +187,7 @@ main
     animation: plat 2s  forwards cubic-bezier(1,0,.79,.72)  ;
     animation-delay: 4s;
     visibility: hidden;
-    /*@include tablette
-    {
-        margin-left: 28px;
-        display: flex;
-        flex-direction: column;
-    }
-    @include screen
-    {
-        margin: 0 18px 0 18px;
-    }*/
+    
     
     
 }
@@ -271,47 +197,14 @@ main
     animation: plat 2s  forwards cubic-bezier(1,0,.79,.72) ;
     visibility: hidden;
    animation-delay: 6s;
-   /*@include tablette
-   {
-
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-    }*/
+   
 }
 
-.menu
-{
-
-    /*@include fullscreen1
-    {
-        display: flex;
-        flex-wrap: wrap;
-    }
-
-    @include screen
-    {
-        display: flex;
-        margin-top: 46px;
-        flex-wrap: wrap;
-    }
-    
-    @include tablette
-    {
-        position: relative;
-    }*/
 
 
-}
 
-.block
-{
-    /*@include tablette
-    {    
-        display: flex;
-        margin-bottom: 58px;
-    }*/
 
-}
+
+
 
 
