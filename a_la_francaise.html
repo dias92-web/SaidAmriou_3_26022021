@@ -4,98 +4,161 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
         <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Shrikhand&display=swap" rel="stylesheet"> 
         <link rel="stylesheet" href="normalizer.css" />
         <link rel="stylesheet" href=".public\css\style.css" />
         <title>Ohmyfood</title>
     </head>
 <body>
 
-    <header>
+    <header class="food food--menu">
         <a href="index.html"><i class="fas fa-arrow-left"></i></a>
         <img src="ohmyfood.png" alt="logo du site" />
     </header>
 
-    <section>
+    <main>
         <img src="images/a_la_francaise.jpg" alt="plat" />
-        <h2>À la française</h2>
-        <i class="far fa-heart"></i>
-        <h2>Entrées</h2>
-        <button>
-            <h2>Tartare de poulpe acidulée</h2>
-            <p>Aux zests d'orange</p>
-            <p>25€</p>
-            <span><i class="far fa-check-circle"></i></span>
-        </button>
-        <button>
-            <h2>Velouté de légumes d'antan</h2>
-            <p>Carotte,panais,topinambour</p>
-            <p>35€</p>
-            <span><i class="far fa-check-circle"></i></span>
-        </button>
-        <button>
-            <h2>Soupe à l'oignon</h2>
-            <p>Revisitée</p>
-            <p>20€</p>
-            <span><i class="far fa-check-circle"></i></span>
-        </button>
-        <h2>Plats</h2>
-        <button>
-            <h2>Coquilles Saint-Jacques</h2>
-            <p>Accompagnée d'une purée panais</p>
-            <p>40€</p>
-            <span><i class="far fa-check-circle"></i></span>
-        </button>
-        <button>
-            <h2>Magret de canard</h2>
-            <p>Et parmentier de pommes de terres</p>
-            <p>35€</p>
-            <span><i class="far fa-check-circle"></i></span>
-        </button>
-        <button>
-            <h2>Pigeonneau d'Ille-et-Vilaine</h2>
-            <p>Sur son lit de gnocchis aux légumes</p>
-            <p>44€</p>
-            <span><i class="far fa-check-circle"></i></span>
-        </button>
-        <h2>Dessert</h2>
-        <button>
-            <h2>Pétales de violette glacés</h2>
-            <p>Et purée de noisettes</p>
-            <p>18€</p>
-            <span><i class="far fa-check-circle"></i></span>
-        </button>
-        <button>
-            <h2>Fondant au chocolat</h2>
-            <p>Revisité</p>
-            <p>22€</p>
-            <span><i class="far fa-check-circle"></i></span>
-        </button>
-        <button>
-            <h2>Millesfeuille croustillant</h2>
-            <p>Myrtilles et pâte d'amande</p>
-            <p>23€</p>
-            <span><i class="far fa-check-circle"></i></span>
-        </button>
-        <button>Commander</button>
-    </section>
-
+        <section>
+            <header>
+                <h1>À la française</h1>
+                <i class="far fa-heart"></i>
+            </header>
+            <div class="menu">
+                <div class="block">
+                    <div class="entree">
+            <h2 class="titre">Entrées</h2>
+            <button>
+                <div class="contener">
+                    <h2>Tartare de poulpe acidulée</h2>
+                    <p>Aux zests d'orange</p>
+                </div>
+                <div class="prix">
+                    <p>25€</p>
+                </div>
+                <div class="icone">
+                    <i class="far fa-check-circle"></i>
+                </div>
+            </button>
+            <button>
+                <div class="contener">
+                    <h2>Velouté de légumes d'antan</h2>
+                    <p>Carotte,panais,topinambour</p>
+                </div>
+                <div class="prix">
+                    <p>35€</p>
+                </div>
+                <div class="icone">
+                    <i class="far fa-check-circle"></i>
+                </div>
+            </button>
+            <button>
+                <div class="contener">
+                    <h2>Soupe à l'oignon</h2>
+                    <p>Revisitée</p>
+                </div>
+                <div class="prix">
+                    <p>20€</p>
+                </div>
+                <div class="icone">
+                    <i class="far fa-check-circle"></i>
+                </div>
+            </button>
+                    </div>
+            <div class="plat">
+            <h2 class="titre">Plats</h2>
+            <button>
+                <div class="contener">
+                    <h2>Coquilles Saint-Jacques</h2>
+                    <p>Accompagnée d'une purée panais</p>
+                </div>
+                <div class="prix">
+                    <p>40€</p>
+                </div>
+                <div class="icone">
+                    <i class="far fa-check-circle"></i>
+                </div>
+            </button>
+            <button>
+                <div class="contener">
+                    <h2>Magret de canard</h2>
+                    <p>Et parmentier de pommes de terres</p>
+                </div>
+                <div class="prix">
+                    <p>35€</p>
+                </div>
+                <div class="icone">
+                    <i class="far fa-check-circle"></i>
+                </div>
+            </button>
+            <button>
+                <div class="contener">
+                    <h2>Pigeonneau d'Ille-et-Vilaine</h2>
+                    <p>Sur son lit de gnocchis aux légumes</p>
+                </div>
+                <div class="prix">
+                    <p>44€</p>
+                </div>
+                <div class="icone">
+                    <i class="far fa-check-circle"></i>
+                </div>
+            </button>
+            </div>
+                </div>
+            <div class="dessert">
+            <h2 class="titre titre3">Dessert</h2>
+            <button>
+                <div class="contener">
+                    <h2>Pétales de violette glacés</h2>
+                    <p>Et purée de noisettes</p>
+                </div>
+                <div class="prix"> 
+                    <p>18€</p>
+                </div>
+                <div class="icone">
+                    <i class="far fa-check-circle"></i>
+                </div>
+            </button>
+            <button>
+                <div class="contener">
+                    <h2>Fondant au chocolat</h2>
+                    <p>Revisité</p>
+                </div>
+                <div class="prix">
+                    <p>22€</p>
+                </div>
+                <div class="icone">
+                    <i class="far fa-check-circle"></i>
+                </div>
+            </button>
+            <button>
+                <div class="contener">
+                    <h2>Millesfeuille croustillant</h2>
+                    <p>Myrtilles et pâte d'amande</p>
+                </div>
+                <div class="prix">
+                    <p>23€</p>
+                </div>
+                <div class="icone">
+                    <i class="far fa-check-circle"></i>
+                </div>
+            </button></div>
+            <button class="gradient--button gradient--button_pay">Commander</button>
+            </div>
+        </div>
+        </section>
+    </main>
     <footer>
         <h3>Oh my food</h3>
             <ul>
-                <div>
+                <li>
                     <i class="fas fa-utensils"></i>
-                    <li>
-                        <a href="#">Proposez un restaurant</a>
-                    </li>
-                </div>
-                <div>
+                    <a href="#">Proposez un restaurant</a>
+                </li>
+                <li>
                     <i class="fas fa-hands-helping"></i>
-                    <li>
-                        <a href="#">Devenir partenaire</a>
-                    </li>
-                </div>
+                    <a href="#">Devenir partenaire</a>
+                </li>
                 <li>
                     <a href="#">Mentions légales</a>
                 </li>
