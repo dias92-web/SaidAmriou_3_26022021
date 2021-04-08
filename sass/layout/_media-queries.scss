@@ -29,6 +29,51 @@
         margin: 35px 0 0 72px;
     }
 
+
+    .food
+    {
+        & img
+        {
+            margin-left: 32px;
+        }
+    }
+
+    form
+    {
+        & i 
+        {
+            margin-left: 94px;
+        }
+
+        & button
+        {
+            margin-left: 80px;
+        }
+
+
+    }
+
+    .gradient--button
+    {
+        margin: 25px 0 0 89px;
+    }
+
+    .restaurants img
+    {
+        width: 100%;
+    }
+
+    .new1
+    {
+        top: 759px;
+    }
+
+    .new2
+    {
+        top: 985px;
+    }
+
+
 }
 
 
@@ -57,6 +102,48 @@
     {
         margin: 35px 0 0 79px;
     }
+
+    
+    .food
+    {
+        & img
+        {
+            margin-left: 45px;
+        }
+    }
+
+
+  form i
+  {
+      margin-left: 109px;
+  }
+
+  form button
+  {
+      margin-left: 113px;
+  }
+
+  .gradient--button
+    {
+        margin: 25px 0 0 110px;
+    }
+
+
+  .restaurants
+  {
+      & img
+      {
+          max-width: 387px;
+      }
+
+      & figcaption
+      {
+          max-width: 387px;
+      }
+
+  }
+
+
 
 
 }
@@ -194,318 +281,10 @@
         {
             margin: auto;
         }*/
-    }
-
-
-
-
-}
-
-
-
-@media screen and (min-width:1024px)
-{
-
-
-    .food--menu
-    {
-        & img
-        {
-            margin-left: 385px;
-        }
-    }
-
-
-    header img
-    {
-        margin-left: 316px;
-    }
-
-    main header
-    {
-        padding: initial;
-    }
-
-
-    main section
-    {
-
-        padding: 57px 5px 42px 28px;
-        margin-top: -94px;
-    }
-
-
-    .menu
-    {
-
-        display: flex;
-        margin-top: 46px;
-        position: relative;
 
     }
 
-
-    .plat
-    {
-        margin: 0 18px 0 18px;
-    }
-
-    .pay
-    {
-        right: 424px;
-        top: 473px;
-    }
-
-    .titre
-    {
-        margin: 0 0 28px 5px;
-        align-self: center;
-    }
-
-    .gradient--button_pay
-    {
-        bottom: -24px;
-        right: 40%;
-    }
-
-
-}
-
-   
-
-
-
-@media screen and (min-width: 1440px)
-{
-
-
-    .food--menu
-    {
-        & img
-        {
-            margin-left: 632px;
-        }
-    }
-
-    header 
-
-    {
-        & img
-        {
-            margin-left: 512px;
-        }
-
-        & h1
-        {
-             margin-right: 81px;
-        }
-    }
-
-    
-    .titre
-    {
-        align-self: center;
-        width: auto;
-
-    }
-
-    .plat
-    {
-        margin: 0 124px;
-    }
-
-
-    main section
-    {
-              padding: 57px 0 42px 0;
-    }
-
-    main button
-    {
-        margin-bottom: 22px;
-    }
-
-    .pay
-    {
-        top: 502px;
-        right: 631px;
-        
-    }
-
-
-    .menu
-    {
-        justify-content: center;
-    }
-
-    .gradient--button_pay
-    {
-        right: 43%;
-    }
-}
-
-@media screen and (min-width:1583px)
-{
-
-
-    .food--menu
-    {
-        & img
-        {
-            margin-left: 700px;
-        }
-    }
-
-    .pay
-    {
-        padding: 24px 75px;
-        top: 482px;
-        right: 669px;
-        border-radius: 40px;
-    }
-
-    main header
-    {
-        padding: initial;
-    }
-
-    main button
-    {
-         height: 70px;
-    }
-
-    .contener
-    {
-        width: 89%;
-
-    }
-    
-    .prix
-    {
-        width: 9%;
-    }
-
-    .icone
-    {
-        display: initial;
-        width: 60px;
-    }
-
-    .gradient--button_pay
-    {
-        right: 45%;
-    }
-
-
-}
-
-
-
-
-
-
-@media screen and (min-width:375px)
-{
-
-    .food
-    {
-        & img
-        {
-            margin-left: 32px;
-        }
-    }
-
-    form
-    {
-        & i 
-        {
-            margin-left: 94px;
-        }
-
-        & button
-        {
-            margin-left: 80px;
-        }
-
-
-    }
-
-    .gradient--button
-    {
-        margin: 25px 0 0 89px;
-    }
-
-    .restaurants img
-    {
-        width: 100%;
-    }
-
-    .new1
-    {
-        top: 759px;
-    }
-
-    .new2
-    {
-        top: 985px;
-    }
-
-
-}
-
-
-
-@media screen and (min-width:425px)
-{
-
-
-    .food
-    {
-        & img
-        {
-            margin-left: 45px;
-        }
-    }
-
-
-  form i
-  {
-      margin-left: 109px;
-  }
-
-  form button
-  {
-      margin-left: 113px;
-  }
-
-  .gradient--button
-    {
-        margin: 25px 0 0 110px;
-    }
-
-
-  .restaurants
-  {
-      & img
-      {
-          max-width: 387px;
-      }
-
-      & figcaption
-      {
-          max-width: 387px;
-      }
-
-  }
-
-}
-
-
-@media screen and (min-width:768px)
-{
-
-
-    .food
+        .food
     {
         & img
         {
@@ -603,31 +382,82 @@
         }
 
 
-}
 
-
-@media screen and (min-width:804px)
-{
-    nav span
-    {
-        left: 231px;
-    }
-
-
-}
-
-@media screen and (min-width:850px)
-{
-    nav span
-    {
-    left: 244px;
-    }
-
-}
-
-@media screen and(min-width:1024px)
-{
     
+    
+
+
+
+}
+
+
+
+@media screen and (min-width:1024px)
+{
+
+
+    .food--menu
+    {
+        & img
+        {
+            margin-left: 385px;
+        }
+    }
+
+
+    header img
+    {
+        margin-left: 316px;
+    }
+
+    main header
+    {
+        padding: initial;
+    }
+
+
+    main section
+    {
+
+        padding: 57px 5px 42px 28px;
+        margin-top: -94px;
+    }
+
+
+    .menu
+    {
+
+        display: flex;
+        margin-top: 46px;
+        position: relative;
+
+    }
+
+
+    .plat
+    {
+        margin: 0 18px 0 18px;
+    }
+
+    .pay
+    {
+        right: 424px;
+        top: 473px;
+    }
+
+    .titre
+    {
+        margin: 0 0 28px 5px;
+        align-self: center;
+    }
+
+    .gradient--button_pay
+    {
+        bottom: -24px;
+        right: 40%;
+    }
+
+
     .food
     {
         & img
@@ -674,11 +504,81 @@ nav span
 }
 
 
+
 }
 
+   
 
-@media screen and (min-width:1440px)
+
+
+@media screen and (min-width: 1440px)
 {
+
+
+    .food--menu
+    {
+        & img
+        {
+            margin-left: 632px;
+        }
+    }
+
+    header 
+
+    {
+        & img
+        {
+            margin-left: 512px;
+        }
+
+        & h1
+        {
+             margin-right: 81px;
+        }
+    }
+
+    
+    .titre
+    {
+        align-self: center;
+        width: auto;
+
+    }
+
+    .plat
+    {
+        margin: 0 124px;
+    }
+
+
+    main section
+    {
+              padding: 57px 0 42px 0;
+    }
+
+    main button
+    {
+        margin-bottom: 22px;
+    }
+
+    .pay
+    {
+        top: 502px;
+        right: 631px;
+        
+    }
+
+
+    .menu
+    {
+        justify-content: center;
+    }
+
+    .gradient--button_pay
+    {
+        right: 43%;
+    }
+
 
     .food
     {
@@ -730,12 +630,60 @@ nav span
                 margin: 25px 0 0 605px;
     }
 
-
 }
-
 
 @media screen and (min-width:1583px)
 {
+
+
+    .food--menu
+    {
+        & img
+        {
+            margin-left: 700px;
+        }
+    }
+
+    .pay
+    {
+        padding: 24px 75px;
+        top: 482px;
+        right: 669px;
+        border-radius: 40px;
+    }
+
+    main header
+    {
+        padding: initial;
+    }
+
+    main button
+    {
+         height: 70px;
+    }
+
+    .contener
+    {
+        width: 89%;
+
+    }
+    
+    .prix
+    {
+        width: 9%;
+    }
+
+    .icone
+    {
+        display: initial;
+        width: 60px;
+    }
+
+    .gradient--button_pay
+    {
+        right: 45%;
+    }
+
 
     .food
     {
@@ -786,6 +734,11 @@ nav span
 
 
 }
+
+
+
+
+
 
 
 
