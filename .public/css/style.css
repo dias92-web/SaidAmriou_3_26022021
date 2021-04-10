@@ -16,45 +16,6 @@ header h1, h3 {
 .food--menu {
   display: flex;
   padding: 24px 0 15px 27px;
-  /*& img
-  {
-
-
-
-      @include ecran
-      {
-          margin-left: 685px;
-      }
-
-      @include fullscreen1
-      {
-          margin-left: 626px;
-      }
-
-      @include screen
-      {
-         margin-left: 359px;
-      }
-
-      @include tablette
-      {
-      margin-left: 207px;
-      }
-
-      @include mobile-only2
-      {
-          margin-left: 48px;
-      }
-
-      @include mobile-only
-      {
-          margin-left: 18px;
-      }
-
-      margin-left: 0;
-
-
-  }*/
 }
 .food--menu a {
   margin-right: 39px;
@@ -103,40 +64,13 @@ form p {
 }
 .gradient--button:hover {
   background-image: linear-gradient(to bottom right, #ff93e1, #a06bdb);
+  box-shadow: 10px 5px 5px #9356D6;
 }
 .gradient--button_pay {
   margin: 35px 0 0 46px;
   width: auto;
   padding: 18px 64px 0 64px;
   border-radius: 40px;
-  /*@include fullscreen1
-  {
-      margin-left: 556px;
-  }
-
-  @include screen
-  {
-      margin: 35px 0 0 364px;
-  }
-
-  @include tablette
-  {
-      position: absolute;
-      bottom: 89px;
-      right: 17%;
-  }
-
-  @include mobile-only2
-  {
-      margin: 35px 0 0 81px;
-      position: initial;
-  }
-
-  @include mobile-only
-  {
-      margin: 35px 0 0 75px;
-      position: initial;
-  }*/
 }
 
 nav {
@@ -209,18 +143,20 @@ nav i {
   background: transparent;
 }
 .restaurants .coeur:hover {
-  -webkit-text-fill-color: transparent;
   cursor: pointer;
+}
+.restaurants .coeur i {
+  transition: font-weight 0.5s, background 4s, color 1s;
+  background: transparent;
+  color: black;
+}
+.restaurants .coeur i:hover {
+  color: transparent;
   background: linear-gradient(to bottom, #ff79da, #9356D6);
   -webkit-background-clip: text;
   -moz-background-clip: text;
   background-clip: text;
-  /*font-weight: bold;
-  color: red;*/
-}
-.restaurants .coeur i:hover {
   font-weight: 800;
-  transition: font-weight 2s;
 }
 .restaurants .coeur h2 {
   font-size: 18px;
@@ -338,62 +274,22 @@ main section {
   z-index: 2;
   margin-top: -43px;
   border-radius: 35px 35px 0 0;
-  /*@include tablette
-  {
-      padding: 0 5px 42px 60px;
-  }
-  @include mobile-only2
-  {
-      padding: 0 23px 42px 23px;
-  }
-  @include screen
-  {
-      padding: 57px 5px 42px 28px;
-      margin-top: -94px;
-  }*/
 }
 
 main header {
   display: flex;
   justify-content: space-between;
   padding: 23px 23px 23px 14px;
-  /*@include tablette
-  {
-      padding: 36px 23px 72px 14px;
-      justify-content: center;
-
-  }
-
-  @include screen
-  {
-      padding: initial;
-  }*/
 }
 
 header i {
   margin-top: 7px;
   font-size: 24px;
-  /*@include tablette
-  {
-      margin: 7px 0 0 0;
-  }*/
-}
-header h1 {
-  /*@include tablette
-  {
-      margin-right: 61px;
-  }*/
 }
 
 main img {
   position: relative;
   z-index: 1;
-  /*@include tablette
-  {
-      max-height: 363px;
-      width: 100%;
-      object-fit: cover;
-  }*/
 }
 main button {
   display: flex;
@@ -406,10 +302,6 @@ main button {
   padding: 11px 20px 13px 6px;
   overflow: hidden;
   height: 65px;
-  /*@include tablette
-  {
-      width: 310px;
-  }*/
 }
 main button i {
   font-size: 26px;
@@ -430,21 +322,18 @@ main h2 {
 }
 
 .contener {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
   flex: none;
   width: 89%;
   animation-fill-mode: both;
-  align-self: flex-end;
   line-height: 24px;
   max-height: calc(24px*2);
   position: relative;
-  padding-right: 96px;
+  padding-right: 20px;
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
   transition: width 2s;
+  text-align: left;
 }
 .contener p {
   font-size: 15px;
@@ -481,28 +370,8 @@ main h2 {
   color: none;
   border-bottom: 3px solid #99E2D0;
   display: inline-block;
-  width: 16%;
+  width: fit-content;
   font-size: 18px;
-  /*@include tablette
-  {
-      align-self: center;
-      width: 39%;
-      text-align: center;
-  }
-  @include screen
-  {
-      margin: 0 0 28px 5px;
-  }
-
-  &3
-  {
-      @include tablette
-      {
-          width: 24%;
-          align-self:flex-start;
-          margin-left: 64px;
-      }
-  }*/
 }
 
 .shop {
@@ -517,68 +386,18 @@ main h2 {
   animation: plat 2s forwards cubic-bezier(1, 0, 0.79, 0.72);
   visibility: hidden;
   animation-delay: 2s;
-  /*@include tablette
-  {
-      display: flex;
-      flex-direction: column;
-  }*/
 }
 
 .plat {
   animation: plat 2s forwards cubic-bezier(1, 0, 0.79, 0.72);
   animation-delay: 4s;
   visibility: hidden;
-  /*@include tablette
-  {
-      margin-left: 28px;
-      display: flex;
-      flex-direction: column;
-  }
-  @include screen
-  {
-      margin: 0 18px 0 18px;
-  }*/
 }
 
 .dessert {
   animation: plat 2s forwards cubic-bezier(1, 0, 0.79, 0.72);
   visibility: hidden;
   animation-delay: 6s;
-  /*@include tablette
-  {
-
-       display: flex;
-       flex-direction: column;
-       align-items: flex-start;
-   }*/
-}
-
-.menu {
-  /*@include fullscreen1
-  {
-      display: flex;
-      flex-wrap: wrap;
-  }
-
-  @include screen
-  {
-      display: flex;
-      margin-top: 46px;
-      flex-wrap: wrap;
-  }
-
-  @include tablette
-  {
-      position: relative;
-  }*/
-}
-
-.block {
-  /*@include tablette
-  {    
-      display: flex;
-      margin-bottom: 58px;
-  }*/
 }
 
 @keyframes bars {
@@ -643,6 +462,33 @@ main h2 {
   .gradient--button_pay {
     margin: 35px 0 0 72px;
   }
+
+  .food img {
+    margin-left: 32px;
+  }
+
+  form i {
+    margin-left: 94px;
+  }
+  form button {
+    margin-left: 80px;
+  }
+
+  .gradient--button {
+    margin: 25px 0 0 89px;
+  }
+
+  .restaurants img {
+    width: 100%;
+  }
+
+  .new1 {
+    top: 759px;
+  }
+
+  .new2 {
+    top: 985px;
+  }
 }
 @media screen and (min-width: 425px) {
   .pay {
@@ -659,6 +505,29 @@ main h2 {
 
   .gradient--button_pay {
     margin: 35px 0 0 79px;
+  }
+
+  .food img {
+    margin-left: 45px;
+  }
+
+  form i {
+    margin-left: 109px;
+  }
+
+  form button {
+    margin-left: 113px;
+  }
+
+  .gradient--button {
+    margin: 25px 0 0 110px;
+  }
+
+  .restaurants img {
+    max-width: 387px;
+  }
+  .restaurants figcaption {
+    max-width: 387px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -747,187 +616,8 @@ main h2 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    /*& h3
-    {
-        margin: auto;
-    }*/
-  }
-}
-@media screen and (min-width: 1024px) {
-  .food--menu img {
-    margin-left: 385px;
   }
 
-  header img {
-    margin-left: 316px;
-  }
-
-  main header {
-    padding: initial;
-  }
-
-  main section {
-    padding: 57px 5px 42px 28px;
-    margin-top: -94px;
-  }
-
-  .menu {
-    display: flex;
-    margin-top: 46px;
-    position: relative;
-  }
-
-  .plat {
-    margin: 0 18px 0 18px;
-  }
-
-  .pay {
-    right: 424px;
-    top: 473px;
-  }
-
-  .titre {
-    margin: 0 0 28px 5px;
-    align-self: center;
-  }
-
-  .gradient--button_pay {
-    bottom: -24px;
-    right: 40%;
-  }
-}
-@media screen and (min-width: 1440px) {
-  .food--menu img {
-    margin-left: 632px;
-  }
-
-  header img {
-    margin-left: 512px;
-  }
-  header h1 {
-    margin-right: 81px;
-  }
-
-  .titre {
-    align-self: center;
-    width: auto;
-  }
-
-  .plat {
-    margin: 0 124px;
-  }
-
-  main section {
-    padding: 57px 0 42px 0;
-  }
-
-  main button {
-    margin-bottom: 22px;
-  }
-
-  .pay {
-    top: 502px;
-    right: 631px;
-  }
-
-  .menu {
-    justify-content: center;
-  }
-
-  .gradient--button_pay {
-    right: 43%;
-  }
-}
-@media screen and (min-width: 1583px) {
-  .food--menu img {
-    margin-left: 700px;
-  }
-
-  .pay {
-    padding: 24px 75px;
-    top: 482px;
-    right: 669px;
-    border-radius: 40px;
-  }
-
-  main header {
-    padding: initial;
-  }
-
-  main button {
-    height: 70px;
-  }
-
-  .contener {
-    width: 89%;
-  }
-
-  .prix {
-    width: 9%;
-  }
-
-  .icone {
-    display: initial;
-    width: 60px;
-  }
-
-  .gradient--button_pay {
-    right: 45%;
-  }
-}
-@media screen and (min-width: 375px) {
-  .food img {
-    margin-left: 32px;
-  }
-
-  form i {
-    margin-left: 94px;
-  }
-  form button {
-    margin-left: 80px;
-  }
-
-  .gradient--button {
-    margin: 25px 0 0 89px;
-  }
-
-  .restaurants img {
-    width: 100%;
-  }
-
-  .new1 {
-    top: 759px;
-  }
-
-  .new2 {
-    top: 985px;
-  }
-}
-@media screen and (min-width: 425px) {
-  .food img {
-    margin-left: 45px;
-  }
-
-  form i {
-    margin-left: 109px;
-  }
-
-  form button {
-    margin-left: 113px;
-  }
-
-  .gradient--button {
-    margin: 25px 0 0 110px;
-  }
-
-  .restaurants img {
-    max-width: 387px;
-  }
-  .restaurants figcaption {
-    max-width: 387px;
-  }
-}
-@media screen and (min-width: 768px) {
   .food img {
     margin-left: 254px;
   }
@@ -990,17 +680,49 @@ main h2 {
     margin: 25px 0 0 308px;
   }
 }
-@media screen and (min-width: 804px) {
-  nav span {
-    left: 231px;
-  }
-}
-@media screen and (min-width: 850px) {
-  nav span {
-    left: 244px;
-  }
-}
 @media screen and (min-width: 1024px) {
+  .food--menu img {
+    margin-left: 385px;
+  }
+
+  header img {
+    margin-left: 316px;
+  }
+
+  main header {
+    padding: initial;
+  }
+
+  main section {
+    padding: 57px 5px 42px 28px;
+    margin-top: -94px;
+  }
+
+  .menu {
+    display: flex;
+    margin-top: 46px;
+    position: relative;
+  }
+
+  .plat {
+    margin: 0 18px 0 18px;
+  }
+
+  .pay {
+    right: 424px;
+    top: 473px;
+  }
+
+  .titre {
+    margin: 0 0 28px 5px;
+    align-self: center;
+  }
+
+  .gradient--button_pay {
+    bottom: -24px;
+    right: 40%;
+  }
+
   .food img {
     margin-left: 354px;
   }
@@ -1035,6 +757,47 @@ main h2 {
   }
 }
 @media screen and (min-width: 1440px) {
+  .food--menu img {
+    margin-left: 632px;
+  }
+
+  header img {
+    margin-left: 512px;
+  }
+  header h1 {
+    margin-right: 81px;
+  }
+
+  .titre {
+    align-self: center;
+    width: auto;
+  }
+
+  .plat {
+    margin: 0 124px;
+  }
+
+  main section {
+    padding: 57px 0 42px 0;
+  }
+
+  main button {
+    margin-bottom: 22px;
+  }
+
+  .pay {
+    top: 502px;
+    right: 631px;
+  }
+
+  .menu {
+    justify-content: center;
+  }
+
+  .gradient--button_pay {
+    right: 43%;
+  }
+
   .food img {
     margin-left: 549px;
   }
@@ -1072,6 +835,42 @@ main h2 {
   }
 }
 @media screen and (min-width: 1583px) {
+  .food--menu img {
+    margin-left: 700px;
+  }
+
+  .pay {
+    padding: 24px 75px;
+    top: 482px;
+    right: 669px;
+    border-radius: 40px;
+  }
+
+  main header {
+    padding: initial;
+  }
+
+  main button {
+    height: 70px;
+  }
+
+  .contener {
+    width: 89%;
+  }
+
+  .prix {
+    width: 9%;
+  }
+
+  .icone {
+    display: initial;
+    width: 60px;
+  }
+
+  .gradient--button_pay {
+    right: 45%;
+  }
+
   .food img {
     margin-left: 641px;
   }
