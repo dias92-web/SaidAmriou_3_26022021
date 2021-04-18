@@ -83,7 +83,7 @@
 {
     position: absolute;
     right: 30px;
-    top: 792px;
+    top: 77px;
     padding: 0 10px;
     background-color: $color-tertiary;
     color: green;
@@ -94,7 +94,7 @@
 {
     position: absolute;
     right: 30px;
-    top: 1020px;
+    top: 304px;
     background-color: $color-tertiary;
     color: green;
     border-radius: 2px;
@@ -113,6 +113,7 @@
     align-items: center;
     position: absolute;
     z-index: 2;
+    background: white;
 }
 
 
@@ -195,6 +196,8 @@ header,form,nav, .restaurants,footer
 
     animation: main 1s backwards;
     animation-delay: 3s;
+    position: relative;
+    z-index: 3;
 }
 
 
