@@ -53,6 +53,7 @@
         &:hover
         {
             background-image: linear-gradient( to bottom right, lighten($color-secondary,5%),lighten($color-primary,5%));
+            box-shadow: 10px 5px 5px $color-primary ;
         }
         &_pay
         {
@@ -61,33 +62,7 @@
             padding: 18px 64px 0 64px;
             border-radius: 40px;
 
-            /*@include fullscreen1
-            {
-                margin-left: 556px;
-            }
+           
 
-            @include screen
-            {
-                margin: 35px 0 0 364px;
-            }
-
-            @include tablette
-            {
-                position: absolute;
-                bottom: 89px;
-                right: 17%;
-            }
-
-            @include mobile-only2
-            {
-                margin: 35px 0 0 81px;
-                position: initial;
-            }
-
-            @include mobile-only
-            {
-                margin: 35px 0 0 75px;
-                position: initial;
-            }*/
         }
     }
