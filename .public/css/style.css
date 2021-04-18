@@ -16,6 +16,7 @@ header h1, h3 {
 .food--menu {
   display: flex;
   padding: 24px 0 15px 27px;
+  animation: none;
 }
 .food--menu a {
   margin-right: 39px;
@@ -165,7 +166,7 @@ nav i {
 .new1 {
   position: absolute;
   right: 30px;
-  top: 792px;
+  top: 77px;
   padding: 0 10px;
   background-color: #99E2D0;
   color: green;
@@ -175,7 +176,7 @@ nav i {
 .new2 {
   position: absolute;
   right: 30px;
-  top: 1020px;
+  top: 304px;
   background-color: #99E2D0;
   color: green;
   border-radius: 2px;
@@ -193,6 +194,7 @@ nav i {
   align-items: center;
   position: absolute;
   z-index: 2;
+  background: white;
 }
 
 .load {
@@ -241,6 +243,8 @@ nav i {
 header, form, nav, .restaurants, footer {
   animation: main 1s backwards;
   animation-delay: 3s;
+  position: relative;
+  z-index: 3;
 }
 
 footer {
@@ -266,6 +270,10 @@ footer i {
   width: 13px;
 }
 
+.footer--exception {
+  animation: none;
+}
+
 main section {
   background-color: #f5f5f5;
   border-radius: 10px 10px 0 0;
@@ -280,6 +288,7 @@ main header {
   display: flex;
   justify-content: space-between;
   padding: 23px 23px 23px 14px;
+  animation: none;
 }
 
 header i {
@@ -483,11 +492,11 @@ main h2 {
   }
 
   .new1 {
-    top: 759px;
+    top: 78px;
   }
 
   .new2 {
-    top: 985px;
+    top: 305px;
   }
 }
 @media screen and (min-width: 425px) {
@@ -666,10 +675,12 @@ main h2 {
 
   .new1 {
     right: 421px;
+    top: 102px;
   }
 
   .new2 {
     right: 421px;
+    top: 330px;
   }
 
   .shop {
