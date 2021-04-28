@@ -7,6 +7,8 @@ main section
     z-index: 2;
     margin-top: -43px;
     border-radius: 35px 35px 0 0;
+    display: flex;
+    flex-direction: column;
 
     
 }
@@ -48,7 +50,7 @@ main
     {
         display: flex;
         justify-content: space-between;
-        width: 100%;
+         max-width: 310px;
         border-radius: 10px;
         margin-bottom: 13px;
         background-color: white;
@@ -75,6 +77,11 @@ main
             width: calc(89% - 60px);
         }
 
+    }
+
+    .width_button--menu
+    {
+        width: 100%;
     }
 
        
@@ -172,11 +179,19 @@ main
 }
 
 
+.menu
+{
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+}
+
+
 .entree
 {
-    animation: plat 2s  forwards  cubic-bezier(1,0,.79,.72);
+    animation: plat 1.5s  forwards  ease-in-out /*cubic-bezier(1,0,.79,.72)*/;
     visibility: hidden;
-    animation-delay: 2s;
+    animation-delay: 1.5s;
     
     
 
@@ -184,8 +199,8 @@ main
 
 .plat
 {
-    animation: plat 2s  forwards cubic-bezier(1,0,.79,.72)  ;
-    animation-delay: 4s;
+    animation: plat 1.5s  forwards ease-in-out /*cubic-bezier(1,0,.79,.72) */ ;
+    animation-delay: 1.7s;
     visibility: hidden;
     
     
@@ -194,9 +209,9 @@ main
 
 .dessert
 {
-    animation: plat 2s  forwards cubic-bezier(1,0,.79,.72) ;
+    animation: plat 1.5s  forwards ease-in-out /*cubic-bezier(1,0,.79,.72)*/ ;
     visibility: hidden;
-   animation-delay: 6s;
+   animation-delay: 1.9s;
    
 }
 
