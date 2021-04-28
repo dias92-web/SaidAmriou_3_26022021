@@ -7,38 +7,48 @@ header h1, h3 {
 }
 
 .food {
-  padding: 24px 0 15px 72px;
+  padding: 24px 0 15px 0;
+  display: flex;
+  justify-content: center;
 }
 .food img {
   height: 26px;
-  margin-top: 6px;
 }
 .food--menu {
-  display: flex;
-  padding: 24px 0 15px 27px;
   animation: none;
 }
 .food--menu a {
-  margin-right: 39px;
+  position: absolute;
+  left: 10px;
   color: black;
 }
 
 .search {
   background-color: #d3d3d3;
-  padding: 10px;
+  padding: 10px 27px 10px 27px;
+  align-self: center;
+  display: flex;
+}
+
+::placeholder {
+  color: black;
 }
 
 form {
   margin-bottom: 30px;
   padding-bottom: 44px;
   background-color: #f5f5f5;
+  display: flex;
+  flex-direction: column;
 }
 form i {
   margin-left: 64px;
+  align-self: center;
 }
 form input {
   border: none;
   background-color: #d3d3d3;
+  font-weight: 800;
 }
 form h1 {
   font-size: 23px;
@@ -54,7 +64,7 @@ form p {
 }
 
 .gradient--button {
-  margin: 27px 0 0 56px;
+  margin-top: 27px;
   border-radius: 40px;
   padding: 11px 21px 10px 20px;
   background-color: #ff79da;
@@ -62,20 +72,25 @@ form p {
   border: none;
   color: white;
   background-image: linear-gradient(to bottom right, #ff79da, #9356D6);
+  align-self: center;
+  max-width: 222px;
 }
 .gradient--button:hover {
   background-image: linear-gradient(to bottom right, #ff93e1, #a06bdb);
   box-shadow: 10px 5px 5px #9356D6;
 }
 .gradient--button_pay {
-  margin: 35px 0 0 46px;
+  margin-top: 35px;
   width: auto;
   padding: 18px 64px 0 64px;
   border-radius: 40px;
 }
 
 nav {
-  padding: 10px;
+  padding: 10px 10px 10px 23px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 nav h2 {
   margin-bottom: 16px;
@@ -90,10 +105,12 @@ nav button {
   margin-bottom: 16px;
   background-color: #f5f5f5;
   font-weight: 800;
+  position: relative;
+  max-width: 287px;
 }
 nav span {
   position: absolute;
-  left: 3px;
+  left: -11px;
   border-radius: 50%;
   border: 1px solid black;
   width: 27px;
@@ -117,6 +134,9 @@ nav i {
 .restaurants {
   padding: 19px;
   background-color: #f5f5f5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .restaurants a {
   text-decoration: none;
@@ -129,6 +149,7 @@ nav i {
 }
 .restaurants figure {
   margin-bottom: 25px;
+  position: relative;
 }
 .restaurants figcaption {
   display: flex;
@@ -165,8 +186,8 @@ nav i {
 
 .new1 {
   position: absolute;
-  right: 30px;
-  top: 77px;
+  right: 10px;
+  top: 9px;
   padding: 0 10px;
   background-color: #99E2D0;
   color: green;
@@ -175,8 +196,8 @@ nav i {
 
 .new2 {
   position: absolute;
-  right: 30px;
-  top: 304px;
+  right: 10px;
+  top: 13px;
   background-color: #99E2D0;
   color: green;
   border-radius: 2px;
@@ -248,7 +269,7 @@ header, form, nav, .restaurants, footer {
 }
 
 footer {
-  background-color: gray;
+  background-color: black;
   color: white;
   padding: 15px 0 7px 16px;
 }
@@ -282,6 +303,8 @@ main section {
   z-index: 2;
   margin-top: -43px;
   border-radius: 35px 35px 0 0;
+  display: flex;
+  flex-direction: column;
 }
 
 main header {
@@ -303,7 +326,7 @@ main img {
 main button {
   display: flex;
   justify-content: space-between;
-  width: 100%;
+  max-width: 310px;
   border-radius: 10px;
   margin-bottom: 13px;
   background-color: white;
@@ -321,6 +344,9 @@ main button:hover > .icone i {
 }
 main button:hover > .contener {
   width: calc(89% - 60px);
+}
+main .width_button--menu {
+  width: 100%;
 }
 main h2 {
   font-size: 17px;
@@ -391,22 +417,28 @@ main h2 {
   font-size: 18px;
 }
 
+.menu {
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+}
+
 .entree {
-  animation: plat 2s forwards cubic-bezier(1, 0, 0.79, 0.72);
+  animation: plat 1.5s forwards ease-in-out;
   visibility: hidden;
-  animation-delay: 2s;
+  animation-delay: 1.5s;
 }
 
 .plat {
-  animation: plat 2s forwards cubic-bezier(1, 0, 0.79, 0.72);
-  animation-delay: 4s;
+  animation: plat 1.5s forwards ease-in-out;
+  animation-delay: 1.7s;
   visibility: hidden;
 }
 
 .dessert {
-  animation: plat 2s forwards cubic-bezier(1, 0, 0.79, 0.72);
+  animation: plat 1.5s forwards ease-in-out;
   visibility: hidden;
-  animation-delay: 6s;
+  animation-delay: 1.9s;
 }
 
 @keyframes bars {
@@ -437,12 +469,18 @@ main h2 {
   0% {
     transform: rotate(0);
   }
-  50% {
-    transform: rotate(360deg);
-  }
-  75% {
-    transform: rotate(360deg);
-  }
+  /* 50%
+   {
+       transform: rotate(360deg);
+   }
+
+   75%
+   {
+       transform: rotate(360deg);
+
+
+
+   }*/
   100% {
     transform: rotate(360deg);
   }
@@ -450,9 +488,11 @@ main h2 {
 @keyframes plat {
   0% {
     visibility: hidden;
+    opacity: 0;
   }
   100% {
     visibility: initial;
+    opacity: 1;
   }
 }
 @media screen and (min-width: 375px) {
@@ -464,39 +504,18 @@ main h2 {
     width: 91%;
   }
 
-  .food--menu img {
-    margin-left: 30px;
-  }
-
-  .gradient--button_pay {
-    margin: 35px 0 0 72px;
-  }
-
-  .food img {
-    margin-left: 32px;
-  }
-
   form i {
     margin-left: 94px;
-  }
-  form button {
-    margin-left: 80px;
-  }
-
-  .gradient--button {
-    margin: 25px 0 0 89px;
   }
 
   .restaurants img {
     width: 100%;
   }
 
-  .new1 {
-    top: 78px;
-  }
-
-  .new2 {
-    top: 305px;
+  footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }
 @media screen and (min-width: 425px) {
@@ -508,28 +527,8 @@ main h2 {
     padding: 0 23px 42px 23px;
   }
 
-  .food--menu img {
-    margin-left: 65px;
-  }
-
-  .gradient--button_pay {
-    margin: 35px 0 0 79px;
-  }
-
-  .food img {
-    margin-left: 45px;
-  }
-
   form i {
     margin-left: 109px;
-  }
-
-  form button {
-    margin-left: 113px;
-  }
-
-  .gradient--button {
-    margin: 25px 0 0 110px;
   }
 
   .restaurants img {
@@ -540,10 +539,6 @@ main h2 {
   }
 }
 @media screen and (min-width: 768px) {
-  .food--menu img {
-    margin-left: 227px;
-  }
-
   main header {
     padding: 36px 23px 72px 14px;
     justify-content: center;
@@ -555,9 +550,6 @@ main h2 {
     object-fit: cover;
   }
 
-  header img {
-    margin-left: 224px;
-  }
   header h1 {
     margin-right: 61px;
   }
@@ -621,25 +613,6 @@ main h2 {
     right: 18%;
   }
 
-  footer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .food img {
-    margin-left: 254px;
-  }
-
-  .search {
-    width: 50%;
-    margin-left: 218px;
-  }
-
-  form button {
-    margin-left: 285px;
-  }
-
   nav {
     display: flex;
     flex-direction: column;
@@ -648,12 +621,9 @@ main h2 {
   nav button {
     width: 41%;
   }
-  nav span {
-    left: 220px;
-  }
 
   .restaurants {
-    padding: 19px 0;
+    padding: 19px 0 0 47px;
   }
   .restaurants img {
     width: 87%;
@@ -664,7 +634,8 @@ main h2 {
 
   .acceuil_img {
     display: flex;
-    margin: 37px 17px 0 59px;
+    margin-top: 37px;
+    justify-content: center;
   }
   .acceuil_img1 {
     width: 380px;
@@ -674,32 +645,18 @@ main h2 {
   }
 
   .new1 {
-    right: 421px;
-    top: 102px;
+    right: 59px;
   }
 
   .new2 {
-    right: 421px;
-    top: 330px;
+    right: 59px;
   }
 
   .shop {
     text-align: center;
   }
-
-  .gradient--button {
-    margin: 25px 0 0 308px;
-  }
 }
 @media screen and (min-width: 1024px) {
-  .food--menu img {
-    margin-left: 385px;
-  }
-
-  header img {
-    margin-left: 316px;
-  }
-
   main header {
     padding: initial;
   }
@@ -713,6 +670,7 @@ main h2 {
     display: flex;
     margin-top: 46px;
     position: relative;
+    flex-direction: row;
   }
 
   .plat {
@@ -733,48 +691,8 @@ main h2 {
     bottom: -24px;
     right: 40%;
   }
-
-  .food img {
-    margin-left: 354px;
-  }
-
-  .search {
-    width: 35%;
-    margin-left: 324px;
-  }
-
-  form button {
-    margin-left: 404px;
-  }
-
-  nav span {
-    left: 296px;
-  }
-
-  .acceuil_img {
-    margin: 37px 17px 0 152px;
-  }
-
-  .new1 {
-    right: 551px;
-  }
-
-  .new2 {
-    right: 551px;
-  }
-
-  .gradient--button {
-    margin: 25px 0 0 388px;
-  }
 }
 @media screen and (min-width: 1440px) {
-  .food--menu img {
-    margin-left: 632px;
-  }
-
-  header img {
-    margin-left: 512px;
-  }
   header h1 {
     margin-right: 81px;
   }
@@ -801,55 +719,15 @@ main h2 {
     right: 631px;
   }
 
-  .menu {
-    justify-content: center;
-  }
-
   .gradient--button_pay {
     right: 43%;
   }
 
-  .food img {
-    margin-left: 549px;
-  }
-
-  .search {
-    width: 30%;
-    margin-left: 515px;
-  }
-
-  form button {
-    margin-left: 612px;
-  }
-
-  nav span {
-    left: 418px;
-  }
-
-  .acceuil_img {
-    margin: 37px 17px 0 308px;
-  }
   .acceuil_img1 {
     margin-right: 100px;
   }
-
-  .new1 {
-    right: 810px;
-  }
-
-  .new2 {
-    right: 810px;
-  }
-
-  .gradient--button {
-    margin: 25px 0 0 605px;
-  }
 }
 @media screen and (min-width: 1583px) {
-  .food--menu img {
-    margin-left: 700px;
-  }
-
   .pay {
     padding: 24px 75px;
     top: 482px;
@@ -880,39 +758,6 @@ main h2 {
 
   .gradient--button_pay {
     right: 45%;
-  }
-
-  .food img {
-    margin-left: 641px;
-  }
-
-  .search {
-    width: 24%;
-    margin-left: 609px;
-  }
-
-  form button {
-    margin-left: 669px;
-  }
-
-  nav span {
-    left: 460px;
-  }
-
-  .acceuil_img {
-    margin: 37px 17px 0 381px;
-  }
-
-  .new1 {
-    right: 881px;
-  }
-
-  .new2 {
-    right: 881px;
-  }
-
-  .gradient--button {
-    margin: 25px 0 0 686px;
   }
 }
 
