@@ -61,7 +61,7 @@
         transform: rotate(0);
     }
     
-    50%
+   /* 50%
     {
         transform: rotate(360deg);
     }
@@ -72,7 +72,7 @@
 
 
 
-    }
+    }*/
     
    
     100%
@@ -91,11 +91,14 @@
     0%
     {
         visibility: hidden;
+        opacity:0;
     }
 
     100%
     {
         visibility: initial;
+        
+        opacity: 1;
     }
 
 }
