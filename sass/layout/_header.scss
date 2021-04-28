@@ -4,21 +4,22 @@
 
 .food
 {   
-    padding: 24px 0 15px 72px;
+    padding: 24px 0 15px 0;
+    display: flex;
+    justify-content: center;
 
     & img{
         height: 26px;
-        margin-top: 6px;
     }
     
     &--menu
     {
-        display: flex;
-        padding: 24px 0 15px 27px;
+       
         animation: none;
         & a
         {
-        margin-right: 39px;
+         position: absolute;
+         left: 10px;
         color: black;
         }
        
